@@ -3,6 +3,7 @@ import { ViewChild } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { Slides } from 'ionic-angular';
+import { GoogleLoginPage } from '../google-login/google-login';
 
 @Component({
   selector: 'page-intro',
@@ -29,6 +30,10 @@ export class IntroPage {
 go()
 {
   this.slide.slideTo(1, 500);
+}
+continue()
+{
+  this.navCtrl.push(GoogleLoginPage);
 }
 
   ionViewDidLoad() {

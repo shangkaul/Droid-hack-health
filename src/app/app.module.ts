@@ -7,13 +7,15 @@ import {GoogleLoginPage} from '../pages/google-login/google-login';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { IntroPage } from '../pages/intro/intro';
+import { SignUpPage} from '../pages/sign-up/sign-up';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     GoogleLoginPage,
-    IntroPage
+    IntroPage,
+    SignUpPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { IntroPage } from '../pages/intro/intro';
     MyApp,
     HomePage,
     GoogleLoginPage,
-    IntroPage
+    IntroPage,
+    SignUpPage
     
   ],
   providers: [

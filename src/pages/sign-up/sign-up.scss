@@ -1,0 +1,28 @@
+page-sign-up {
+
+    .googl
+    {
+        background: url('../img/signup.jpg');
+        background-size:cover;
+    }
+.user_img
+{
+    border-radius:50%;
+    height:200px;
+    width:200px;
+}
+ion-item{
+    background: transparent!important;
+    // border-radius:20px;
+   
+}
+ion-input
+{
+       height:40px;
+       border-radius:10px;
+        border:2px solid whitesmoke;
+}
+.list-md .item-input:last-child {
+    border-bottom:0px;    
+}
+}
