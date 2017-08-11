@@ -8,14 +8,24 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { IntroPage } from '../pages/intro/intro';
 import { SignUpPage} from '../pages/sign-up/sign-up';
-
+import { TabsPage} from '../pages/tabs/tabs';
+import { AboutPage} from '../pages/about/about';
+import { ContactsPage} from '../pages/contacts/contacts';
+import {ProfilePage } from '../pages/profile/profile';
+import { MedkitPage} from '../pages/medkit/medkit';
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     GoogleLoginPage,
     IntroPage,
-    SignUpPage
+    SignUpPage,
+    TabsPage,
+    ProfilePage,
+    ContactsPage,
+    AboutPage,
+    MedkitPage
+
   ],
   imports: [
     BrowserModule,
@@ -27,7 +37,13 @@ import { SignUpPage} from '../pages/sign-up/sign-up';
     HomePage,
     GoogleLoginPage,
     IntroPage,
-    SignUpPage
+    SignUpPage,
+    TabsPage,
+    AboutPage,
+    ContactsPage,
+    AboutPage,
+    ProfilePage,
+    MedkitPage
     
   ],
   providers: [

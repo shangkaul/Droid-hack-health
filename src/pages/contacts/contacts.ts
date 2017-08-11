@@ -1,28 +1,24 @@
 import { Component } from '@angular/core';
 import {NavController, NavParams } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
 
 /**
- * Generated class for the SignUpPage page.
+ * Generated class for the ContactsPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-sign-up',
-  templateUrl: 'sign-up.html',
+  selector: 'page-contacts',
+  templateUrl: 'contacts.html',
 })
-export class SignUpPage {
+export class ContactsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SignUpPage');
+    console.log('ionViewDidLoad ContactsPage');
   }
-signupn()
-{
-  this.navCtrl.push(TabsPage);
-}
+
 }
