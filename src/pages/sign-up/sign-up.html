@@ -1,11 +1,11 @@
 <ion-content class="googl" padding style="background:url('assets/img/signup.jpg')">
 <p style="text-align:center;">
-<img class="user_img"  src='assets/img/img.jpg'>
+<img class="user_img"  [src]='imageURL'>
 <br>
 <br>
 <ion-list>
-  <ion-item no-lines>
-    <ion-input style="color:white;" type="text" placeholder="Name"></ion-input>
+  <ion-item no-lines style="color:white;">
+    <ion-input style="color:white;" value="{{name}}" type="text" placeholder="Name"></ion-input>
   </ion-item>
   <ion-item no-lines>
     <ion-input style="color:white;" type="text" placeholder="Age"></ion-input>

@@ -13,10 +13,17 @@ import { AboutPage} from '../pages/about/about';
 import { ContactsPage} from '../pages/contacts/contacts';
 import {ProfilePage } from '../pages/profile/profile';
 import { MedkitPage} from '../pages/medkit/medkit';
-import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { GooglePlus } from '@ionic-native/google-plus';
+import  firebase from 'firebase';
+import { UserProvider } from '../providers/user/user';
+import { Http,HttpModule } from '@angular/http';
 
-import firebase from 'firebase';
+import { Facebook } from '@ionic-native/facebook';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
 
 export const firebaseConfig={
    
@@ -38,14 +45,18 @@ export const firebaseConfig={
     ProfilePage,
     ContactsPage,
     AboutPage,
-    MedkitPage
+    MedkitPage,
 
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-        AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
+    HttpModule,
 
+      
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -66,8 +77,10 @@ export const firebaseConfig={
     StatusBar,
     SplashScreen,
     GooglePlus,
-
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    Facebook,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    UserProvider,
+  
   ]
 })
 export class AppModule {}

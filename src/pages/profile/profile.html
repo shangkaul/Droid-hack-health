@@ -1,3 +1,48 @@
-<ion-content padding>
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Profile</ion-title>
+    <!--<ion-buttons end>
+      <button ion-button (click)="Pop($event)" style="background-color:firebrick;color:white;">Privacy<ion-icon name="arrow-dropdown"></ion-icon></button>
+    </ion-buttons>-->
+  </ion-navbar>
+
+</ion-header>
+<ion-content style="background-color: #262670">
+  <div class="bg">
+    <ion-grid>
+  <ion-row>
+    <ion-col col-4>
+      <img [src]="imageURL" style="border-radius:50%;">
+    </ion-col>
+    <ion-col col-8>
+
+      <ion-list>
+
+  <ion-item style="background-color: #262670;color:white;">
+  {{ name }}
+  </ion-item>
+
+  <ion-item style="background-color: #262670;color:white;">
+    
+  {{ email }}
+  </ion-item>
+
+</ion-list>
+
+    </ion-col>
+    
+  </ion-row>
+</ion-grid>
+    
+    </div><br><br>
+<ion-row>
+  <ion-col col-3></ion-col>
+  <ion-col col-6>
+    <div style="width:180px;height:180px;border-radius:50%;border:5px solid #ccc;padding-top:25px;background-color:white;">
+    </div>
+  </ion-col>
+  <ion-col  col-3></ion-col>
+</ion-row>
 
 </ion-content>
