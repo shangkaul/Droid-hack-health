@@ -10,7 +10,7 @@ import { GoogleLoginPage } from '../pages/google-login/google-login';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = GoogleLoginPage;
+  rootPage:any = SignUpPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
