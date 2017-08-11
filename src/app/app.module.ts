@@ -6,12 +6,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import {GoogleLoginPage} from '../pages/google-login/google-login';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { IntroPage } from '../pages/intro/intro';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    GoogleLoginPage
+    GoogleLoginPage,
+    IntroPage
   ],
   imports: [
     BrowserModule,
@@ -21,7 +23,9 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage,
-    GoogleLoginPage
+    GoogleLoginPage,
+    IntroPage
+    
   ],
   providers: [
     StatusBar,

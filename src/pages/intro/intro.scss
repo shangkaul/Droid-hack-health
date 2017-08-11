@@ -1,3 +1,25 @@
 page-intro {
+.toolbar-background {
+    background: #41AC9A;
+    border-color: transparent;
+  }
+
+  .slide-zoom {
+    height: 100%;
+  }
+
+  .slide-title {
+    // margin-top: 2.8rem;
+    color:white;
+
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .slide-image {
+    max-height: 60%;
+    max-width: 70%;
+    margin-top: 40px;
+  }
 
 }
