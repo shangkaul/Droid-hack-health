@@ -13,6 +13,20 @@ import { AboutPage} from '../pages/about/about';
 import { ContactsPage} from '../pages/contacts/contacts';
 import {ProfilePage } from '../pages/profile/profile';
 import { MedkitPage} from '../pages/medkit/medkit';
+import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
+import { GooglePlus } from '@ionic-native/google-plus';
+
+import firebase from 'firebase';
+
+export const firebaseConfig={
+   
+   apiKey: "AIzaSyDd2RJMbkcwbwkulluV2i9gPhS0_9d6ddQ",
+    authDomain: "fir-hacks.firebaseapp.com",
+    databaseURL: "https://fir-hacks.firebaseio.com",
+    projectId: "firebase-hacks",
+    storageBucket: "firebase-hacks.appspot.com",
+    messagingSenderId: "767074418891"
+};
 @NgModule({
   declarations: [
     MyApp,
@@ -29,7 +43,9 @@ import { MedkitPage} from '../pages/medkit/medkit';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+        AngularFireModule.initializeApp(firebaseConfig)
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -49,6 +65,7 @@ import { MedkitPage} from '../pages/medkit/medkit';
   providers: [
     StatusBar,
     SplashScreen,
+    GooglePlus,
 
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
