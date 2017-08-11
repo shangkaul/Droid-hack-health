@@ -2,7 +2,6 @@ page-sign-up {
 
     .googl
     {
-        background: url('../img/signup.jpg');
         background-size:cover;
     }
 .user_img
@@ -20,9 +19,10 @@ ion-input
 {
        height:40px;
        border-radius:10px;
-        border:2px solid whitesmoke;
+        border:4px solid #B8D7E1;
 }
 .list-md .item-input:last-child {
     border-bottom:0px;    
 }
+
 }
