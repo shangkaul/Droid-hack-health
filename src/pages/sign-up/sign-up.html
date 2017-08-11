@@ -5,22 +5,22 @@
 <br>
 <ion-list>
   <ion-item no-lines style="color:white;">
-    <ion-input style="color:white;" value="{{name}}" type="text" placeholder="Name"></ion-input>
+    <ion-input style="color:white;" value="{{name}}" type="text" [(ngModel)]="heading" placeholder="Name"></ion-input>
   </ion-item>
   <ion-item no-lines>
-    <ion-input style="color:white;" type="text" placeholder="Age"></ion-input>
+    <ion-input style="color:white;" value="{{uid}}" type="text" [(ngModel)]="details" placeholder="Age"></ion-input>
   </ion-item>
     <ion-item no-lines>
-    <ion-input style="color:white;" type="text" placeholder="Contact No."></ion-input>
+    <ion-input style="color:white;" type="text" placeholder="Contact No." [(ngModel)]="contact"></ion-input>
   </ion-item> 
    <ion-item no-lines>
-    <ion-input style="color:white;" type="text" placeholder="Address"></ion-input>
+    <ion-input style="color:white;" type="text" placeholder="Address" [(ngModel)]="address"></ion-input>
   </ion-item> 
    <ion-item no-lines>
-    <ion-input style="color:white;" type="text" placeholder="Aadhar Card No:"></ion-input>
+    <ion-input style="color:white;" type="text" placeholder="Aadhar Card No:" [(ngModel)]="aadhar"></ion-input>
   </ion-item> 
    <ion-item no-lines>
-    <ion-input style="color:white;" type="text" placeholder="Email Id:"></ion-input>
+    <ion-input style="color:white;" type="text" placeholder="Email Id:" [(ngModel)]="email"></ion-input>
   </ion-item>
 </ion-list>
 <br>
