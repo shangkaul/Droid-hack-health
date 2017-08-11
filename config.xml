@@ -92,4 +92,5 @@
         <variable name="APP_ID" value="1437191219700844" />
         <variable name="APP_NAME" value="Sanjeevani" />
     </plugin>
+    <plugin name="cordova-sms-plugin" spec="~0.1.11" />
 </widget>

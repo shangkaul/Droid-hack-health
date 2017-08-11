@@ -17,9 +17,10 @@ import { GooglePlus } from '@ionic-native/google-plus';
 import  firebase from 'firebase';
 import { UserProvider } from '../providers/user/user';
 import { Http,HttpModule } from '@angular/http';
-
+ import { Geolocation } from '@ionic-native/geolocation';
+  import {SMS} from '@ionic-native/sms';
 import { Facebook } from '@ionic-native/facebook';
-
+import {ContactProvider} from  '../providers/contact/contact';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -78,8 +79,11 @@ export const firebaseConfig={
     SplashScreen,
     GooglePlus,
     Facebook,
+    Geolocation,
+    SMS,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
+    ContactProvider
   
   ]
 })

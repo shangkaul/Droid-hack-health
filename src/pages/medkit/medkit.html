@@ -1,19 +1,23 @@
 <ion-content padding style="background:#183650;">
-  <ion-card style="height:45%;background-color:#E5E8E9">
+  <ion-card style="background-color:#E5E8E9">
   <ion-card-content>
-    <p style="text-align:center;">
-   <span style="font-size:50px;color:#183650"><strong>First Aid</strong></span><br><br>
+    <p style="text-align:center;background-color: #E5E8E9">
+   <span style="font-size:45px;color:#183650"><strong>First Aid</strong></span><br><br>
    <span style="color:#434445;font-size:27px;">The tips which can save your life</span> 
     </p>
+  <ion-item style="background:transparent;height:70px;"><ion-icon item-right style="font-size: 300%;color:#183650;max-height: 20px;" name="information-circle"></ion-icon></ion-item>
+    
   </ion-card-content>
-  <ion-item item-right></ion-item>
 </ion-card>
-<ion-card style="height:45%;background-color:#E5E8E9">
-  <ion-card-content>
+<ion-card style="background-color:#E5E8E9">
+  <ion-card-content (click)="help()">
     <p style="text-align:center;">
-   <span style="font-size:50px;color:#183650"><strong>Help Me</strong></span><br><br>
+   <span style="font-size:45px;color:#183650"><strong>Help Me</strong></span><br><br>
    <span style="color:#434445;font-size:27px;">The tips which can save your life</span> 
     </p>
+    <!--{{this.lat}},{{this.long}}<br>{{this.con.n3}}<br>{{this.con.n5}}-->
+  <ion-item style="background:transparent;height:70px;"><ion-icon item-right style="font-size: 300%;color:#183650;max-height: 20px;" name="information-circle"></ion-icon></ion-item>
+    
   </ion-card-content>
 </ion-card>
 
