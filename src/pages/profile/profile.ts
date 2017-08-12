@@ -19,7 +19,7 @@ export class ProfilePage {
   named:any;
   imageURL:any;
   contactd:any
-  emails:any;
+  emaild:any;
   uidd:any;
 
   constructor(public navCtrl: NavController, private ud:UserProvider,
@@ -33,8 +33,8 @@ export class ProfilePage {
                 this.addressd=this.ud.addresses;
                 console.log('this.addressd');
                 this.aadhard=this.ud.aadhars;
-                this.emails= this.ud.email; 
-                this.uidd = this.ud.detailss; 
+                this.emaild= this.ud.emails; 
+                this.uidd = this.ud.uid; 
                 
 
   }

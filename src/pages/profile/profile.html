@@ -5,22 +5,22 @@
 <br>
 <ion-list>
   <ion-item no-lines style="color:white;">
-{{this.named}}
+    <ion-input style="color:white;" value="{{named}}" type="text" [(ngModel)]="heading" placeholder="Name"></ion-input>
   </ion-item>
   <ion-item no-lines>
-{{this.uidd}}
+    <ion-input style="color:white;" value="{{uidd}}" type="text" [(ngModel)]="details" placeholder="Age"></ion-input>
   </ion-item>
     <ion-item no-lines>
-{{this.contactd}}
+    <ion-input style="color:white;" value="{{contactd}}" type="text" placeholder="Contact No." ></ion-input>
   </ion-item> 
    <ion-item no-lines>
-{{this.addressd}}
+    <ion-input style="color:white;" value="{{addressd}}" type="text" placeholder="Address"></ion-input>
   </ion-item> 
    <ion-item no-lines>
-{{this.aadhard}}
+    <ion-input style="color:white;" value="{{aadhard}}" type="text" placeholder="Aadhar Card No:" ></ion-input>
   </ion-item> 
    <ion-item no-lines>
-{{this.emails}}
+    <ion-input style="color:white;" value="{{emaild}}" type="text" placeholder="Email Id:" ></ion-input>
   </ion-item>
 </ion-list>
 <br>

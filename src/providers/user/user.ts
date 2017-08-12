@@ -14,7 +14,7 @@ export class UserProvider {
 uid:any="";
   imageUrl:any="";
   name:any="";
-  email:any="";
+  emails:any="";
   contacts:any;
   addresses:any="";
   aadhars:any="";

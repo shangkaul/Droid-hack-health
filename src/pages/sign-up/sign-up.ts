@@ -24,7 +24,6 @@ public contact:any;
  public email:any;
   name:any;
   imageURL:any;
- // email:any;
   uid:any;
 
   constructor(public navCtrl: NavController, public ud:UserProvider,
@@ -38,7 +37,7 @@ public contact:any;
               
                 this.ud.addresses=this.address;
                 this.ud.aadhars=this.aadhar;
-                //this.ud.email= this.emails; 
+                this.ud.emails= this.email; 
                 this.uid = this.ud.uid;   
                           
         console.log('this.uid');
@@ -48,9 +47,9 @@ public contact:any;
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfilePage');
-  } 
+  }
   signupn(){
-    this.http.get("http://localhost/sanjeevani/record.php?heading="+this.heading+"&details="+this.details+"&contact="+this.contact+"&address="+this.address+"&aadhar="+this.aadhar+"&email="+this.email)
+    this.http.get("http://srmpedia.esy.es/sanjeevani/record.php?heading="+this.heading+"&details="+this.details+"&contact="+this.contact+"&address="+this.address+"&aadhar="+this.aadhar+"&email="+this.email)
 .subscribe((res) =>{
        this.name= this.ud.name;
                 this.imageURL= this.ud.imageUrl;
@@ -61,7 +60,7 @@ public contact:any;
               
                 this.ud.addresses=this.address;
                 this.ud.aadhars=this.aadhar;
-                //this.ud.email= this.emails; 
+                this.ud.emails= this.email; 
                 this.uid = this.ud.uid;   
    });
    this.navCtrl.push(TabsPage);
