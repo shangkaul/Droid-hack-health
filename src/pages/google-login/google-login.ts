@@ -6,6 +6,7 @@ import  firebase from 'firebase';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Facebook } from '@ionic-native/facebook';
 import { UserProvider } from '../../providers/user/user';
+import { HomePage} from '../home/home';
 /**
  * Generated class for the GoogleLoginPage page.
  *
@@ -32,6 +33,10 @@ displayName;
       this.ud.email = user.email;
 
     });
+  }
+  admin()
+  {
+    this.navCtrl.push(HomePage);
   }
 
   login() {

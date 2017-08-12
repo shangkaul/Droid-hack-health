@@ -48,7 +48,7 @@ public contact:any;
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfilePage');
-  }
+  } 
   signupn(){
     this.http.get("http://localhost/sanjeevani/record.php?heading="+this.heading+"&details="+this.details+"&contact="+this.contact+"&address="+this.address+"&aadhar="+this.aadhar+"&email="+this.email)
 .subscribe((res) =>{

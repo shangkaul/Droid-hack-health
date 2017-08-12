@@ -45,15 +45,16 @@ help()
 {
   this.http.get("http://srmpedia.esy.es/health/save.php?lat="+this.lat+"&long="+this.long+"&nam="+this.user.name+"&mob="+this.user.uid)
  .subscribe((res)=>{
- 
+ alert("done");
+ alert(this.lat+","+this.long)
 
   });
- this.sms.send(this.con.n1, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
- this.sms.send(this.con.n2, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
- this.sms.send(this.con.n3, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
- this.sms.send(this.con.n4, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
-this.sms.send(this.con.n5, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
-alert("SENT");
+//  this.sms.send(this.con.n1, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
+//  this.sms.send(this.con.n2, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
+//  this.sms.send(this.con.n3, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
+//  this.sms.send(this.con.n4, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
+// this.sms.send(this.con.n5, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
+// alert("SENT");
 
 
 
