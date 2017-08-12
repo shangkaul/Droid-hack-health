@@ -6,6 +6,7 @@ import  firebase from 'firebase';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Facebook } from '@ionic-native/facebook';
 import { UserProvider } from '../../providers/user/user';
+import{HomePage} from '../home/home';
 /**
  * Generated class for the GoogleLoginPage page.
  *
@@ -53,7 +54,10 @@ displayName;
         .then(res => {console.log(res);this.navCtrl.setRoot(SignUpPage)});
     }
   }
-
+admin()
+{
+  this.navCtrl.push(HomePage);
+}
   signOut() {
     this.afAuth.auth.signOut();
   }

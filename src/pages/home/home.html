@@ -1,12 +1,15 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Hospital Login
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.<br><br><br>
-  <button ion-button (click)="intro()">Intro Slider</button>
-</ion-content>
+  Enter your hosp id<br>1.SRM<br>2.K.R<br>
+<ion-input style="border: 2px solid dodgerblue;" type="text" [(ngModel)]="id" placeholder="Hosp_id">
+  </ion-input>
+  <button ion-button (click)="intro()" type="submit">Submit</button>
+  
+  </ion-content>

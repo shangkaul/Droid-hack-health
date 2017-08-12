@@ -26,6 +26,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { NativeStorage } from '@ionic-native/native-storage';
+import { HospPage} from '../pages/hosp/hosp';
 
 export const firebaseConfig={
    
@@ -48,7 +49,8 @@ export const firebaseConfig={
     ContactsPage,
     AboutPage,
     MedkitPage,
-    GridPage
+    GridPage,
+    HospPage
 
   ],
   imports: [
@@ -74,7 +76,8 @@ export const firebaseConfig={
     AboutPage,
     ProfilePage,
     MedkitPage,
-    GridPage
+    GridPage,
+    HospPage
     
   ],
   providers: [
