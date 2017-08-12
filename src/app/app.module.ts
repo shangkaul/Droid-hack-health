@@ -27,6 +27,15 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { NativeStorage } from '@ionic-native/native-storage';
 import { HospPage} from '../pages/hosp/hosp';
+import { WoundsPage } from '../pages/wounds/wounds';
+import {BurnsPage } from '../pages/burns/burns';
+import {FeverPage } from '../pages/fever/fever';
+import { FracturePage} from '../pages/fracture/fracture';
+import { HeatPage} from '../pages/heat/heat';
+import { SnakePage} from '../pages/snake/snake';
+
+
+
 
 export const firebaseConfig={
    
@@ -50,7 +59,13 @@ export const firebaseConfig={
     AboutPage,
     MedkitPage,
     GridPage,
-    HospPage
+    HospPage,
+    HeatPage,
+    SnakePage,
+    BurnsPage,
+    FeverPage,
+    FracturePage,
+    WoundsPage
 
   ],
   imports: [
@@ -77,7 +92,13 @@ export const firebaseConfig={
     ProfilePage,
     MedkitPage,
     GridPage,
-    HospPage
+    HospPage,
+    HeatPage,
+    SnakePage,
+    BurnsPage,
+    FeverPage,
+    FracturePage,
+    WoundsPage
     
   ],
   providers: [
