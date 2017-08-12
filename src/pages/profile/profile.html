@@ -1,48 +1,30 @@
-<ion-header>
-
-  <ion-navbar color="primary">
-    <ion-title>Profile</ion-title>
-    <!--<ion-buttons end>
-      <button ion-button (click)="Pop($event)" style="background-color:firebrick;color:white;">Privacy<ion-icon name="arrow-dropdown"></ion-icon></button>
-    </ion-buttons>-->
-  </ion-navbar>
-
-</ion-header>
-<ion-content style="background-color: #262670">
-  <div class="bg">
-    <ion-grid>
-  <ion-row>
-    <ion-col col-4>
-      <img [src]="imageURL" style="border-radius:50%;">
-    </ion-col>
-    <ion-col col-8>
-
-      <ion-list>
-
-  <ion-item style="background-color: #262670;color:white;">
-  {{ name }}
+<ion-content class="googl" padding style="background:url('assets/img/signup.jpg')">
+<p style="text-align:center;">
+<img class="user_img"  [src]='imageURL'>
+<br>
+<br>
+<ion-list>
+  <ion-item no-lines style="color:white;">
+{{this.named}}
   </ion-item>
-
-  <ion-item style="background-color: #262670;color:white;">
-    
-  {{ email }}
+  <ion-item no-lines>
+{{this.uidd}}
   </ion-item>
-
+    <ion-item no-lines>
+{{this.contactd}}
+  </ion-item> 
+   <ion-item no-lines>
+{{this.addressd}}
+  </ion-item> 
+   <ion-item no-lines>
+{{this.aadhard}}
+  </ion-item> 
+   <ion-item no-lines>
+{{this.emails}}
+  </ion-item>
 </ion-list>
-
-    </ion-col>
-    
-  </ion-row>
-</ion-grid>
-    
-    </div><br><br>
-<ion-row>
-  <ion-col col-3></ion-col>
-  <ion-col col-6>
-    <div style="width:180px;height:180px;border-radius:50%;border:5px solid #ccc;padding-top:25px;background-color:white;">
-    </div>
-  </ion-col>
-  <ion-col  col-3></ion-col>
-</ion-row>
+<br>
+<button color="login" ion-button round style="width:90%; height:60px;"(click)="signupn();"><span style="font-size:25px;font-family:sans-serif;color:#112C38;font-weight:400;">Login Now</span></button>
+</p>
 
 </ion-content>

@@ -24,7 +24,7 @@ import {ContactProvider} from  '../providers/contact/contact';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-
+import { NativeStorage } from '@ionic-native/native-storage';
 
 export const firebaseConfig={
    
@@ -81,6 +81,7 @@ export const firebaseConfig={
     Facebook,
     Geolocation,
     SMS,
+    NativeStorage,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
     ContactProvider

@@ -15,6 +15,10 @@ uid:any="";
   imageUrl:any="";
   name:any="";
   email:any="";
+  contacts:any;
+  addresses:any="";
+  aadhars:any="";
+  detailss:any="";
   constructor(public http: Http) {
     console.log('Hello UserProvider Provider');
   }

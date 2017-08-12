@@ -12,18 +12,29 @@ import { UserProvider } from '../../providers/user/user';
   templateUrl: 'profile.html',
 })
 export class ProfilePage {
-
-  name:any;
+  contact:any;
+ public addressd:any;
+ public aadhard:any;
+ public email:any;
+  named:any;
   imageURL:any;
-  total_score:number;
-  email:number;
+  contactd:any
+  emails:any;
+  uidd:any;
 
   constructor(public navCtrl: NavController, private ud:UserProvider,
               public navParams: NavParams) {
-                this.name= this.ud.name;
+
+                 this.named= this.ud.name;
                 this.imageURL= this.ud.imageUrl;
-                this.email= this.ud.email;                
-        
+               this.contactd=this.ud.contacts;
+               console.log(this.contactd);
+                console.log(this.ud.contacts);
+                this.addressd=this.ud.addresses;
+                console.log('this.addressd');
+                this.aadhard=this.ud.aadhars;
+                this.emails= this.ud.email; 
+                this.uidd = this.ud.detailss; 
                 
 
   }
