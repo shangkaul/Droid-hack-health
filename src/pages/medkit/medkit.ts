@@ -51,8 +51,6 @@ grid()
 help()
 {
   
-  if(this.con.n1==1)
-  {
     this.http.get("http://srmpedia.esy.es/health/save.php?lat="+this.lat+"&long="+this.long+"&nam="+this.user.name+"&mob="+this.user.uid)
  .subscribe((res)=>{
 //  alert("done");
@@ -72,16 +70,7 @@ this.sms.send(this.con.n5, 'Your Friend needs your help, navigate to his locatio
 alert("SENT");
 
 }
-  
-  else
-  {
-    alert("Add contacts first");
-    this.navCtrl.push(ContactsPage);
 
-}
-
-
-}
 i(){
   let alert = this.alertCtrl.create({
     title: 'First Aid',
