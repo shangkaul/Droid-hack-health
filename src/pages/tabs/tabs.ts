@@ -4,7 +4,8 @@ import { ContactsPage } from '../contacts/contacts';
 import {NavController, NavParams } from 'ionic-angular';
 import {ProfilePage} from '../profile/profile';
 import {MedkitPage} from '../medkit/medkit';
-
+import {NativeStorage} from '@ionic-native/native-storage';
+import {ContactProvider} from '../../providers/contact/contact';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -17,7 +18,7 @@ export class TabsPage {
   tab3Root: any = ContactsPage;
   tab4Root: any = ProfilePage;
 
-  constructor() {
+  constructor(public nativeStorage: NativeStorage,public ct: ContactProvider) {
 
-  }
-}
+
+}}

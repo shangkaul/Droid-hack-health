@@ -7,19 +7,33 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage} from '../pages/tabs/tabs';
 import { GoogleLoginPage } from '../pages/google-login/google-login';
 import { NativeStorage } from '@ionic-native/native-storage';
+import { Storage } from '@ionic/storage';
+import {ContactProvider} from '../providers/contact/contact';
 //import { UserProvider } from '../providers/user/user';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
 uid:any;
-  rootPage:any = GoogleLoginPage;
+  rootPage:any ;
 
   constructor(platform: Platform,
    statusBar: StatusBar,
     splashScreen: SplashScreen,
-    public nativeStorage: NativeStorage) { 
+    public storage:Storage,
+    public nativeStorage: NativeStorage, public ct:ContactProvider) { 
     platform.ready().then(() => {
+      storage.get('xyz').then((val) => {
+    this.ct.n1=val;
+   
+  });
+ alert(this.ct.n1);
+
+this.nativeStorage.getItem('myitem')
+  .then(
+    data => this.rootPage=TabsPage,
+    error => this.rootPage=TabsPage//GoogleLoginPage
+  );
 //       this.nativeStorage.setItem('sanjivan', {property: 'uid'})
 //   .then(
 //     () => alert('sent'),

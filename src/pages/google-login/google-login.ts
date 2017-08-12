@@ -7,6 +7,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { Facebook } from '@ionic-native/facebook';
 import { UserProvider } from '../../providers/user/user';
 import{HomePage} from '../home/home';
+import { NativeStorage} from '@ionic-native/native-storage';
 /**
  * Generated class for the GoogleLoginPage page.
  *
@@ -21,7 +22,7 @@ import{HomePage} from '../home/home';
 export class GoogleLoginPage {
 displayName;
    constructor(public navCtrl: NavController, private ud:UserProvider,
-    private afAuth: AngularFireAuth, private fb: Facebook, private platform: Platform) {
+    private afAuth: AngularFireAuth, private fb: Facebook, private platform: Platform,public nativeStorage:NativeStorage) {
     afAuth.authState.subscribe((user: firebase.User) => {
       if (!user) {
         this.displayName = null;
@@ -35,6 +36,8 @@ displayName;
   }
 
   login() {
+  
+
     if (this.platform.is('cordova')) {
       // return this.fb.login(['email', 'public_profile']).then(res => {
       //   const facebookCredential = firebase.auth.FacebookAuthProvider.credential(res.authResponse.accessToken);
