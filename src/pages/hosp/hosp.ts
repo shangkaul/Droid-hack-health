@@ -16,6 +16,7 @@ import {Http} from '@angular/http';
 
 export class HospPage {
 id:any;
+nam:any;
 public ents:any[];
   constructor(public navCtrl: NavController, public navParams: NavParams,public http:Http) {
     this.id=this.navParams.get('id');
@@ -25,7 +26,11 @@ public ents:any[];
                   this.ents=res.json();
                   console.log(this.ents);
                 });
-  }
+if(this.id==1)
+this.nam="SRM Hospital";
+else if(this.id==2)
+this.nam="K.R Hospital"  
+}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HospPage');

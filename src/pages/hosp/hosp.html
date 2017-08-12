@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>hosp</ion-title>
+  <ion-navbar color="danger">
+    <ion-title>{{this.nam}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -16,11 +16,9 @@
 <ion-content padding>
  <ion-list>
    <ion-item *ngFor="let ent of ents">   <!--article defined now and articles array from ts-->   
-  <h2> {{ent.nam}}</h2>
-  <p>
-    {{ent.mob}}
-  </p>
- <a href="{{ent.url}}"> <button ion-button>Navigate</button></a>
+  <h1> <b>Name Of Victim:</b>{{ent.nam}}</h1>
+  <h1><b>Contact No:</b> {{ent.mob}}</h1>
+ <a href="{{ent.url}}"> <button style="height:30px;width:40%;" ion-button>Navigate</button></a>
 </ion-item>
 
  </ion-list>

@@ -114,7 +114,7 @@ export const firebaseConfig={
     Storage,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
-    ContactProvider
+    ContactProvider,
   
   ]
 })

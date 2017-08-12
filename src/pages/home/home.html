@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="danger">
     <ion-title>
       Hospital Login
     </ion-title>
@@ -7,9 +7,11 @@
 </ion-header>
 
 <ion-content padding>
-  Enter your hosp id<br>1.SRM<br>2.K.R<br>
-<ion-input style="border: 2px solid dodgerblue;" type="text" [(ngModel)]="id" placeholder="Hosp_id">
-  </ion-input>
-  <button ion-button (click)="intro()" type="submit">Submit</button>
+  <h1 style="text-align:center;">Enter your Hospital Id</h1><br><br>
+  <h2>1.SRM Hospital</h2><br>
+  <h2>2.K.R Hospital</h2><br><br>
+<ion-input style="border: 2px solid dodgerblue; border-radius:10px;" type="text" [(ngModel)]="id" placeholder="Hosp_id(1 or 2)">
+  </ion-input><br><br>
+  <button ion-button block (click)="intro()" color="danger" type="submit">Submit</button>
   
   </ion-content>
