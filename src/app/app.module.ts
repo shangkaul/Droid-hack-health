@@ -13,6 +13,7 @@ import { AboutPage} from '../pages/about/about';
 import { ContactsPage} from '../pages/contacts/contacts';
 import {ProfilePage } from '../pages/profile/profile';
 import { MedkitPage} from '../pages/medkit/medkit';
+import { GridPage} from '../pages/grid/grid';
 import { GooglePlus } from '@ionic-native/google-plus';
 import  firebase from 'firebase';
 import { UserProvider } from '../providers/user/user';
@@ -47,6 +48,7 @@ export const firebaseConfig={
     ContactsPage,
     AboutPage,
     MedkitPage,
+    GridPage
 
   ],
   imports: [
@@ -71,7 +73,8 @@ export const firebaseConfig={
     ContactsPage,
     AboutPage,
     ProfilePage,
-    MedkitPage
+    MedkitPage,
+    GridPage
     
   ],
   providers: [

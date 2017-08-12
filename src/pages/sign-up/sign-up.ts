@@ -57,10 +57,10 @@ public contact:any;
               this.ud.contacts=this.contact;
               console.log(this.ud.contacts);
               console.log(this.contact);
-              
                 this.ud.addresses=this.address;
                 this.ud.aadhars=this.aadhar;
                 this.ud.emails= this.email; 
+                console.log(this.email);
                 this.uid = this.ud.uid;   
    });
    this.navCtrl.push(TabsPage);
