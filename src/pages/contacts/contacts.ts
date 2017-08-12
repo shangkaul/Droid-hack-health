@@ -15,11 +15,11 @@ import { ContactProvider } from '../../providers/contact/contact';
   templateUrl: 'contacts.html',
 })
 export class ContactsPage {
-public contact:any;
-public contact1:any;
-public contact2:any;
-public contact3:any;
-public contact4:any;
+public contact:any="9619180009";
+public contact1:any="9973866388";
+public contact2:any="9484636373";
+public contact3:any="9465353536";
+public contact4:any="9937465355";
   constructor(public ct:ContactProvider,public navCtrl: NavController, public navParams: NavParams,public http:Http) {
   }
  add(){

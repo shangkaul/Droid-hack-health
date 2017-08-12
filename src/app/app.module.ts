@@ -33,6 +33,7 @@ import {FeverPage } from '../pages/fever/fever';
 import { FracturePage} from '../pages/fracture/fracture';
 import { HeatPage} from '../pages/heat/heat';
 import { SnakePage} from '../pages/snake/snake';
+import { IonicStorageModule } from '@ionic/storage';
 
 
 
@@ -75,6 +76,7 @@ export const firebaseConfig={
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     HttpModule,
+    IonicStorageModule.forRoot()
 
       
   ],
@@ -109,6 +111,7 @@ export const firebaseConfig={
     Geolocation,
     SMS,
     NativeStorage,
+    Storage,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
     ContactProvider

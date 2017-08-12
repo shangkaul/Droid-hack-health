@@ -9,6 +9,7 @@ import { GoogleLoginPage } from '../pages/google-login/google-login';
 import { NativeStorage } from '@ionic-native/native-storage';
 import { Storage } from '@ionic/storage';
 import {ContactProvider} from '../providers/contact/contact';
+import { IntroPage } from '../pages/intro/intro';
 //import { UserProvider } from '../providers/user/user';
 @Component({
   templateUrl: 'app.html'
@@ -27,12 +28,12 @@ uid:any;
     this.ct.n1=val;
    
   });
- alert(this.ct.n1);
+//  alert(this.ct.n1);
 
 this.nativeStorage.getItem('myitem')
   .then(
-    data => this.rootPage=TabsPage,
-    error => this.rootPage=TabsPage//GoogleLoginPage
+    data => this.rootPage=GoogleLoginPage,
+    error => this.rootPage=IntroPage//GoogleLoginPage
   );
 //       this.nativeStorage.setItem('sanjivan', {property: 'uid'})
 //   .then(

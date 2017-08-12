@@ -19,8 +19,9 @@ export class IntroPage {
       ima: "assets/img/next.png",
     },
       {
-      title: "What is Ionic?",
-      description: "<b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.",
+        image: "assets/img/capture.jpg",
+      title: "What is Sanjeevni?",
+      description: "<b>SANJEEVNI</b> is an app built to save lives, with the resolve that no more lives will be lost due to delay in getting the victim to the hospital or failing to give them first-aid in those crucial moments.",
     },
   ];
 
