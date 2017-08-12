@@ -111,7 +111,7 @@ export const firebaseConfig={
     Geolocation,
     SMS,
     NativeStorage,
-    Storage,
+    
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
     ContactProvider,

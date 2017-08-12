@@ -10,11 +10,11 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class ContactProvider {
-  public n1:any;
-  public n2:any;
-  public n3:any;
-  public n4:any;
-  public n5:any;
+  public n1:any="9619180009";
+  public n2:any="9988366466";
+  public n3:any="7550172178";
+  public n4:any="7554688377";
+  public n5:any="9983373745";
 
   constructor() {
     console.log('Hello ContactProvider Provider');
