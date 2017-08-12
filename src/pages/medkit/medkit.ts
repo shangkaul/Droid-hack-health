@@ -5,6 +5,7 @@ import { ContactProvider } from '../../providers/contact/contact';
 import { SMS } from '@ionic-native/sms';
 import {Http} from '@angular/http';
 import {UserProvider}  from '../../providers/user/user';
+import { GridPage}  from '../grid/grid';
 /**
  * Generated class for the MedkitPage page.
  *
@@ -37,7 +38,10 @@ watch.subscribe((data) => {
 }
 
 
-
+grid()
+{
+  this.navCtrl.push(GridPage);
+}
   ionViewDidLoad() {
     console.log('ionViewDidLoad MedkitPage');
   }
@@ -49,12 +53,17 @@ help()
  alert(this.lat+","+this.long)
 
   });
-//  this.sms.send(this.con.n1, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
-//  this.sms.send(this.con.n2, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
-//  this.sms.send(this.con.n3, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
-//  this.sms.send(this.con.n4, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
-// this.sms.send(this.con.n5, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
-// alert("SENT");
+ this.sms.send(this.con.n1, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
+ console.log(this.con.n1);
+ this.sms.send(this.con.n2, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
+  console.log(this.con.n2);
+ this.sms.send(this.con.n3, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
+  console.log(this.con.n3);
+ this.sms.send(this.con.n4, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
+ console.log(this.con.n4);
+this.sms.send(this.con.n5, 'Mar rha hu  https://www.google.co.in/maps/dir//'+this.lat+','+this.long);
+ console.log(this.con.n5);
+alert("SENT");
 
 
 
